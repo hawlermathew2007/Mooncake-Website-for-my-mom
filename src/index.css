@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300&family=Nanum+Myeongjo&family=Playpen+Sans:wght@500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-playpen-sans{
+    font-family: 'Playpen Sans', cursive;
+}
