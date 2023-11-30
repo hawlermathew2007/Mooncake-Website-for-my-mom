@@ -7,3 +7,13 @@
 .font-playpen-sans{
     font-family: 'Playpen Sans', cursive;
 }
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }

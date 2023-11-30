@@ -8,7 +8,7 @@ module.exports = {
       colors: {
         'lavender': '#7D5BA6',
         'cyan-green': '#30D5C8',
-        'lavender-shadow': '#DFD9E2'
+        'lavender-shadow': '#C9A8F1'
       }
     },
   },
