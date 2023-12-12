@@ -3,7 +3,7 @@ import banhToLogo from './assets/logo.png'
 import introBanh1 from './assets/introBanh1.jpg'
 import introBanh2 from './assets/introBanh3.jpg'
 import introBanh3 from './assets/introBanh4.jpg'
-import { introductionPara, bakerShop } from '../const/data'
+import { bakerShop } from '../const/data'
 
 const Introduction = () => {
     // const introBanhList = [introBanh1, introBanh2, introBanh3 ]

@@ -8,12 +8,34 @@
     font-family: 'Playpen Sans', cursive;
 }
 
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background: #C9A8F1;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #7D5BA6;
+}
+
+.slideUp {
+    animation-name: slideUp;
+    animation-duration: 400ms;
+}
   
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
+@keyframes slideUp {
+  from {opacity: .4; margin-top: 1rem;}
+  to {opacity: 1; margin-top: 0.5rem;}
+}
