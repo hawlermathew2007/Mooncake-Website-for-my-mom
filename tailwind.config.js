@@ -9,6 +9,9 @@ module.exports = {
         'lavender': '#7D5BA6',
         'cyan-green': '#30D5C8',
         'lavender-shadow': '#C9A8F1'
+      },
+      backgroundImage: {
+        'introduction' : "url(/src/components/assets/introduction.png)"
       }
     },
   },

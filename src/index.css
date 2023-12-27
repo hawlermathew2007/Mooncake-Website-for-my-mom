@@ -8,6 +8,11 @@
     font-family: 'Playpen Sans', cursive;
 }
 
+.responsive-height{
+  min-height: calc(100vh - 91.2px);
+  min-height: calc(100svh - 91.2px);
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 4px;
@@ -34,8 +39,18 @@
     animation-name: slideUp;
     animation-duration: 400ms;
 }
-  
+ 
+.fade {
+  animation: fade;
+  animation-duration: 400ms;
+}
+
 @keyframes slideUp {
   from {opacity: .4; margin-top: 1rem;}
   to {opacity: 1; margin-top: 0.5rem;}
+}
+
+@keyframes fade {
+  from { opacity: 0; }
+  to {opacity: 1;}
 }
