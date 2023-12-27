@@ -4,7 +4,7 @@ const Others = () => {
   return (
     <div>
       Others
-      <h1 id='sentaodo'>fuck</h1>
+      <h1 id='sentaodo'>duck</h1>
     </div>
   )
 }
