@@ -4,13 +4,35 @@
 @tailwind components;
 @tailwind utilities;
 
+:root{
+  --scale: 0.7;
+}
+
 .font-playpen-sans{
     font-family: 'Playpen Sans', cursive;
 }
 
+.rating input::before{
+  content: '\f005';
+  position: absolute;
+  font-family: fontAwesome;
+  font-size: calc(22px*var(--scale));
+  transition: 0.5s;
+  left: calc(10px*var(--scale));
+}
+
+.rating input:nth-child(2n+1)::before{
+  left: initial;
+  right: calc(10.5px*var(--scale));
+}
+
 .responsive-height{
-  min-height: calc(100vh - 91.2px);
-  min-height: calc(100svh - 91.2px);
+  min-height: calc(100vh - 87.45px);
+  min-height: calc(100svh - 87.45px);
+}
+
+.swiper-pagination-bullet-active-main{
+  background-color: #7D5BA6 !important
 }
 
 /* width */

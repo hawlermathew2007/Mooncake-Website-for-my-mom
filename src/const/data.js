@@ -1,3 +1,5 @@
+import userImg from '../components/assets/user.png'
+
 const bakerShop = 'Bánh Tồ'
 
 const specialBanh = [
@@ -173,8 +175,47 @@ const comboBanh = [
 
 const listBanh = [...specialBanh,...othersBanh, ...comboBanh]
 
+const comments = [
+    {
+        name: "Minh Thiện",
+        rate: 5,
+        comment: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta modi quasi esse ipsum, eos officia rerum accusantium quas repudiandae explicabo qui eum amet fugit blanditiis quod voluptatem natus cumque provident.",
+        image: userImg
+    },
+    {
+        name: "Hoành Hạnh",
+        rate: 4.5,
+        comment: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta modi quasi esse ipsum, eos officia rerum accusantium quas repudiandae explicabo qui eum amet fugit blanditiis quod voluptatem natus cumque provident.",
+        image: userImg
+    },
+    {
+        name: "Mỹ Kha",
+        rate: 5,
+        comment: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta modi quasi esse ipsum, eos officia rerum accusantium quas repudiandae explicabo qui eum amet fugit blanditiis quod voluptatem natus cumque provident.",
+        image: userImg
+    },
+    {
+        name: "Nước Lộc",
+        rate: 4,
+        comment: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta modi quasi esse ipsum, eos officia rerum accusantium quas repudiandae explicabo qui eum amet fugit blanditiis quod voluptatem natus cumque provident.",
+        image: userImg
+    },
+    {
+        name: "Hoài Ân",
+        rate: 4.5,
+        comment: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta modi quasi esse ipsum, eos officia rerum accusantium quas repudiandae explicabo qui eum amet fugit blanditiis quod voluptatem natus cumque provident.",
+        image: userImg
+    },
+    {
+        name: "Dương Chấn",
+        rate: 5,
+        comment: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta modi quasi esse ipsum, eos officia rerum accusantium quas repudiandae explicabo qui eum amet fugit blanditiis quod voluptatem natus cumque provident.",
+        image: userImg
+    }
+]
 
 export {
     bakerShop,
-    listBanh
+    listBanh,
+    comments
 }
