@@ -4,7 +4,7 @@ import Comment from './components/Comment'
 import NavBar from './components/NavBar'
 import Special from './components/Special'
 import Others from './components/Others'
-import Quote from './components/Quote'
+import Extra from './components/Extra'
 import Combo from './components/Combo'
 import End from './components/End'
 
@@ -16,7 +16,7 @@ function App() {
       <Comment />
       <Special />
       <Others />
-      <Quote />
+      <Extra />
       <Combo />
       <End />
     </div>

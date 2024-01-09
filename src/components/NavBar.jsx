@@ -9,6 +9,17 @@ const NavBar = () => {
 
   const searchBanhRef = useRef()
 
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("navbar").style.top = "0";
+    } else {
+      document.getElementById("navbar").style.top = "-91.2px";
+    }
+    prevScrollpos = currentScrollPos;
+  }
+
   useEffect(() => {
    const handler = (e) => {
     if(!searchBanhRef.current.contains(e.target)){
@@ -38,7 +49,7 @@ const NavBar = () => {
   }
 
   return (
-    <nav className='w-full bg-white shadow-lg px-8 py-6 flex justify-between items-center sticky top-0 left-0 z-10'>
+    <nav id="navbar" className='w-full bg-white shadow-lg px-8 py-6 flex justify-between items-center sticky top-0 left-0 z-10 transition-all'>
       <img src={banhToLogo} alt="Banh To" className={`w-[160px] fade ${toggle ? "hidden" : "block"} sm:block`}/>
       <div className={`${toggle ? "w-full relative" : "w-2/5" } flex justify-center items-center gap-8`}>
         <div className={`${toggle ? "w-full" : "w-10/12  relative" }`}>
@@ -46,7 +57,7 @@ const NavBar = () => {
           <div ref={searchBanhRef} className={`w-full max-h-52 ${display} mt-2 rounded-md overflow-auto overflow-x-hidden bg-white shadow-md shadow-lavender absolute slideUp`}>
             <ul>
               { listBanh.map((banh, index) => {
-                  return <a key={index} onClick={() => { setDisplay('hidden') }} href={`#${banh.id}`}><li className='w-full py-2 hover:bg-slate-200'><i className="fa-solid fa-moon text-lavender px-4"></i>{banh.name}</li></a>
+                  return <a key={index} onClick={() => { setDisplay('hidden') }} href={`#${banh.id == "thapcamthuonghang" || banh.id == "thapcambatbuu" || banh.id == "sentaodo" ? "special" : banh.id}`}><li className='w-full py-2 hover:bg-slate-200'><i className="fa-solid fa-moon text-lavender px-4"></i>{banh.name}</li></a>
                 })
               }
             </ul>
@@ -57,7 +68,6 @@ const NavBar = () => {
       </div>
     </nav>
   )
-
 }
 
 export default NavBar

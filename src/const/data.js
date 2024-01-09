@@ -1,4 +1,8 @@
-import userImg from '../components/assets/user.png'
+import userImg from '../components/assets/user/user.png'
+//special
+import thuonghang from '../components/assets/specialBanh/thuonghang.jpg'
+import bathuu from '../components/assets/specialBanh/bathuu.jpg'
+import sentaodo from '../components/assets/specialBanh/sentaodo.jpg'
 
 const bakerShop = 'Bánh Tồ'
 
@@ -8,25 +12,35 @@ const specialBanh = [
         id: "thapcamthuonghang",
         type: "230g-2T",
         prize: "155K",
-        image: null
+        image: thuonghang
     },
     {
         name: "Thập cẩm bát bửu",
         id: "thapcambatbuu",
-        type1: "150g-1T",
-        prize1: "80K",
-        type2: "230g-2T",
-        prize2: "95K",
-        image: null
+        type: "150g-1T",
+        prize: "80K",
+        image: bathuu
+    },
+    {
+        name: "Thập cẩm bát bửu",
+        id: "thapcambatbuu",
+        type: "230g-2T",
+        prize: "95K",
+        image: bathuu
     },
     {
         name: "Sen táo đỏ",
         id: "sentaodo",
-        type1: "150g-1T",
-        prize1: "85K",
-        type2: "230g-2T",
-        prize2: "100K",
-        image: null
+        type: "150g-1T",
+        prize: "85K",
+        image: sentaodo
+    },
+    {
+        name: "Sen táo đỏ",
+        id: "sentaodo",
+        type: "230g-2T",
+        prize: "100K",
+        image: sentaodo
     }
 ]
 
@@ -217,5 +231,8 @@ const comments = [
 export {
     bakerShop,
     listBanh,
+    specialBanh,
+    othersBanh,
+    comboBanh,
     comments
 }

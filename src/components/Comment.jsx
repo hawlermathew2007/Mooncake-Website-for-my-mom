@@ -3,7 +3,6 @@ import { useSwiper } from 'swiper/react';
 import { comments } from '../const/data';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 
@@ -14,10 +13,17 @@ const Comment = () => {
   const swiper = useSwiper()
 
   return (
-    <div className='p-6 py-16'>
+    <div className='p-6 py-20 pb-24'>
       <h1 className='text-center text-2xl '>Comments</h1>
       <div className='w-[85%] m-auto '>
-        <Swiper slidesPerView={window.innerWidth <= 640 ? 1 : window.innerWidth <= 900 ? 2 : 3} spaceBetween={50} pagination={{dynamicBullets: true, clickable:true}} modules={[Pagination]}>
+        <Swiper breakpoints={{
+          640: { slidesPerView: 1 },
+          800: { slidesPerView: 2 },
+          1350: { slidesPerView: 3 }
+        }}
+        spaceBetween={50} 
+        pagination={{dynamicBullets: true, clickable:true}} 
+        modules={[Pagination]}>
           {
             comments.map((comment, index) => {
               return <SwiperSlide key={index}>

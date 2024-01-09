@@ -4,7 +4,6 @@ const Others = () => {
   return (
     <div>
       Others
-      <h1 id='sentaodo'>duck</h1>
     </div>
   )
 }

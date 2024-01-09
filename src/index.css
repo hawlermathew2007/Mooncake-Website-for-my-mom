@@ -8,6 +8,10 @@
   --scale: 0.7;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 .font-playpen-sans{
     font-family: 'Playpen Sans', cursive;
 }
@@ -33,6 +37,10 @@
 
 .swiper-pagination-bullet-active-main{
   background-color: #7D5BA6 !important
+}
+
+.swiper-pagination-bullet-active{
+  background-color: #C9A8F1;
 }
 
 /* width */
