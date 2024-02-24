@@ -45,7 +45,7 @@ const Combo = (props) => {
                           </div>
                       })}
                   </div>
-                  <button onClick={() => {props.changeNumofItems({name: combo.name, type: combo.type2, prize: combo.prize})}} className='bg-lavender text-white p-2 px-3 rounded-md w-fit self-center font-bold tracking-wide'>Đặt ngay</button>
+                  <button onClick={() => {props.changeNumofItems({name: combo.name, type: null, prize: combo.prize})}} className='bg-lavender text-white p-2 px-3 rounded-md w-fit self-center font-bold tracking-wide'>Đặt ngay</button>
               </div>
           </div>
         })}

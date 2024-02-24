@@ -23,7 +23,7 @@ function App() {
     var message = ''
     for(var i = 0; i < numOfItems.length; i++){
       if(numOfItems){
-        message += `<br>${numOfItems[i].num} ${numOfItems[i].name} ${numOfItems[i].type}`
+        message += `<br>${numOfItems[i].num} ${numOfItems[i].name} ${numOfItems[i].type != null ? numOfItems[i].type : ''}`
       }
     }
     const order = {

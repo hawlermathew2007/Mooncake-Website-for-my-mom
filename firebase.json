@@ -1,6 +1,5 @@
 {
   "hosting": {
-    "site": "banhto-051083",
     "public": "dist",
     "ignore": [
       "firebase.json",
