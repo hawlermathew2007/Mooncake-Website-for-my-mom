@@ -7,7 +7,7 @@ const Others = (props) => {
       <h1 className='uppercase text-3xl text-center font-semibold tracking-wide'>các bánh trung thu ngon khác</h1>
       <div className='flex flex-wrap justify-evenly items-center my-14 gap-y-8'>
         { othersBanh.map((banh, index) => {
-          return <div key={index} className='border-2 border-black p-8 rounded m-8'>
+          return <div key={index} id={banh.id} className='border-2 border-black p-8 rounded m-8'>
             <img className='w-[20rem] shadow-md shadow-black rounded' src={banh.image} alt={banh.id} />
             <div className='flex flex-col justify-center items-center gap-8 my-12 mb-6 mx-0'>
               <h2 className='text-center text-2xl font-semibold uppercase'>{banh.name}</h2>
