@@ -155,9 +155,9 @@ function App() {
                 <p key={index} className='font-semibold'>{item.name} {item.type}</p>
                 <p className='mx-3'>{item.prize}</p>
                 <div className='flex gap-3'>
-                  <button className='bg-lavender h-fit text-white py-[0.35rem] px-[0.5rem] rounded-full text-xs' onClick={()=>{adjustNum(item,"plus")}}><i class="fa-solid fa-plus"></i></button>
+                  <button className='bg-lavender h-fit text-white py-[0.35rem] px-[0.5rem] rounded-full text-xs' onClick={()=>{adjustNum(item,"plus")}}><i className="fa-solid fa-plus"></i></button>
                   <p className='text-lg font-semibold'>{item.num != null ? item.num : ''}</p>
-                  <button className='bg-lavender h-fit text-white py-[0.35rem] px-[0.5rem] rounded-full text-xs' onClick={()=>{adjustNum(item,"minus")}}><i class="fa-solid fa-minus"></i></button>
+                  <button className='bg-lavender h-fit text-white py-[0.35rem] px-[0.5rem] rounded-full text-xs' onClick={()=>{adjustNum(item,"minus")}}><i className="fa-solid fa-minus"></i></button>
                 </div>
               </div>
               }) 

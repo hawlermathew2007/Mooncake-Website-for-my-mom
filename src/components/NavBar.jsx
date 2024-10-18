@@ -9,13 +9,22 @@ const NavBar = () => {
 
   const searchBanhRef = useRef()
 
+  const defocus = (e) => {
+    e.preventDefault()
+  }
+
   var prevScrollpos = window.pageYOffset;
   window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;
+    var navbarElement = document.getElementById("navbar")
     if (prevScrollpos > currentScrollPos) {
-      document.getElementById("navbar").style.top = "0";
+      navbarElement.style.top = "0";
     } else {
-      document.getElementById("navbar").style.top = "-91.2px";
+      if (display == 'block'){
+        setDisplay("hidden")
+      }
+      document.getElementById("banhInput").blur()
+      navbarElement.style.top = "-91.2px";
     }
     prevScrollpos = currentScrollPos;
   }

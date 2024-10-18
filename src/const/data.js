@@ -240,7 +240,7 @@ const comments = [
         image: userImg
     },
     {
-        name: "Nước Lộc",
+        name: "Út Lộc",
         rate: 4,
         comment: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta modi quasi esse ipsum, eos officia rerum accusantium quas.",
         image: userImg
@@ -248,7 +248,7 @@ const comments = [
     {
         name: "Hoài Ân",
         rate: 4.5,
-        comment: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta modi quasi esse ipsum, eos officia rerum accusantium quas.",
+        comment: "Bánh mẹ làm ngon lắm! Mọi người hãy mua ủng hộ mẹ tui và thưởng thức mùa trung thu vui vẻ nha!",
         image: userImg
     },
     {

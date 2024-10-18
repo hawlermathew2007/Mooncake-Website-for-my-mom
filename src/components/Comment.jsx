@@ -15,7 +15,7 @@ const Comment = () => {
   return (
     <div className='p-6 py-20 pb-24'>
       <h1 className='text-center text-2xl font-semibold'>Comments</h1>
-      <div className='w-[85%] m-auto '>
+      <div className='w-[85%] m-auto'>
         <Swiper breakpoints={{
           640: { slidesPerView: 1 },
           800: { slidesPerView: 2 },
@@ -27,7 +27,7 @@ const Comment = () => {
           {
             comments.map((comment, index) => {
               return <SwiperSlide key={index}>
-                <div className={`flex flex-col items-center gap-4 border-2 p-5 text-center h-full mt-7 mb-14 rounded-xl shadow-xl shadow-lavender`}>
+                <div className={`flex flex-col justify-center items-center gap-4 border-2 p-5 text-center h-[250px] l mt-7 mb-14 rounded-xl shadow-xl shadow-lavender`}>
                   <p>{comment.comment}</p>
                   <div className='relative flex flex-row-reverse rating'>
                     {
